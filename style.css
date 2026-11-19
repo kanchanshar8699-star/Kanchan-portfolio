@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090711;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #151020;
+}
+
+header h2 {
+    color: white;
+    font-size: 28px;
+}
+
+span {
+    color: #b44cff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+nav a:hover {
+    color: #b44cff;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home h2 {
+    color: #b44cff;
+}
+
+.home p {
+    color: #ccc;
+    margin: 20px 0;
+    max-width: 450px;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6a00aa, #c77dff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    box-shadow: 0 0 50px #9d35e8;
+}
+
+.btn {
+    display: inline-block;
+    background: #a020f0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+section:not(.home) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #ccc;
+    margin: 15px;
+    line-height: 1.8;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills div {
+    background: #241334;
+    padding: 25px 40px;
+    border: 1px solid #a020f0;
+    border-radius: 12px;
+}
+
+.skills div:hover {
+    background: #8a2be2;
+}
+
+#projects h2 {
+    color: #c77dff;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #151020;
+    color: #ccc;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+}
